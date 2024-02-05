@@ -18,7 +18,7 @@ async function createThought(req, res) {
             const user = await User.findByIdAndUpdate(userId, { $push: { thoughts: thought.id } } { new: true });
             if (!user) {
                 await Thought.findByIdAndDelete(thought.id);
-                return res.status(404).json({ message: 'No user with this ID🚫' });
+                return res.status(404).json({ message: 'No user with this ID⚠️' });
             }
         } catch (err) {
             await Thought.findByIdAndDelete(thought.id);
@@ -29,3 +29,40 @@ async function createThought(req, res) {
         res.status(500).json(err);
     }
 };
+
+async function getThoughtById(req, res) {
+    const { id } = req. params;
+    try {
+        const thought = await Thought.findById(id);
+        if (!thought) {
+            return res.status(404).json({ message: 'No thoughts with that ID⚠️' });
+        }
+        res.json(thought);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+};
+
+async function updateThought(req, res) {
+    const { id } = req.params;
+    try {
+        const thought = await Thought.findByIdAndUpdate(
+            id,
+            { 
+                $set: req.body 
+            },
+            { 
+                runValidators: true, 
+                new: true
+            },
+        );
+
+        if (!thought) {
+            return res.status(404).json({ message: 'No thoughts with that ID⚠️' });
+        }
+        res.json(thought);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+};
+
