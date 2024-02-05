@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const reactionSchema = require('./Reaction');
-const { timeStamp } = require('console');
 
 const thoughtSchema = new mongoose.Schema(
     {
