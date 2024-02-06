@@ -42,13 +42,13 @@ async function createThought(req, res) {
                 await Thought.findByIdAndDelete(thought.id);
                 return res.status(404).json({ message: 'No user with this ID⚠️' });
             }
-        } catch (err) {
+            res.json(thought);
+        } catch (updateError) {
             await Thought.findByIdAndDelete(thought.id);
-            return res.status(500).json(err);
+            return res.status(500).json({ message: 'Error updating user', error: updateError.message });
         }
-        res.json(thought);
-    } catch (err) {
-        res.status(500).json(err);
+    } catch (creationError) {
+        res.status(500).json({ message: 'Error creating thought', error: creationError.message });
     }
 };
 
