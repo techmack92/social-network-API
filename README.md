@@ -33,10 +33,7 @@
 
 ## Usage
 ***When user has completed all installation steps above:***<br> 
-1. Connect to the database by using command: `mysql -u root -p` & enter password from .env file
-2. Use command: `SOURCE schema.sql;`<br>
-3. Seed data to the database by using command: `npm run seed`<br>
-4. Connect to the server & begin the application by using command: `npm start`<br> 
+1. Connect to the server & begin the application by using command: `node --watch server.js`<br> 
 
 ## Demo
 [Demo Walkthrough](https://drive.google.com/file/d/11-lspdVNFxWrrWCYSI3h-ERPZQrjoBTT/view?usp=sharing)<br>

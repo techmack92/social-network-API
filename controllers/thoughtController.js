@@ -11,9 +11,9 @@ async function getThoughts(req, res) {
 };
 
 async function getThoughtById(req, res) {
-    const { id } = req. params;
+    const { thoughtId } = req. params;
     try {
-        const thought = await Thought.findById(id);
+        const thought = await Thought.findById(thoughtId);
         if (!thought) {
             return res.status(404).json({ message: 'No thoughts with that ID⚠️' });
         }
@@ -53,10 +53,10 @@ async function createThought(req, res) {
 };
 
 async function updateThought(req, res) {
-    const { id } = req.params;
+    const { thoughtId } = req.params;
     try {
         const thought = await Thought.findByIdAndUpdate(
-            id,
+            thoughtId,
             { 
                 $set: req.body 
             },
@@ -76,9 +76,9 @@ async function updateThought(req, res) {
 };
 
 async function deleteThought(req, res) {
-    const { id } = req.params;
+    const { thoughtId } = req.params;
     try {
-        const thought = await Thought.findByIdAndDelete(id)
+        const thought = await Thought.findByIdAndDelete(thoughtId)
         if (!thought) {
             return res.status(404).json({ message: 'No thoughts with that ID⚠️' });
         }
