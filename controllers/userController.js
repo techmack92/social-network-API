@@ -11,9 +11,9 @@ async function getUsers(req, res) {
 };
 
 async function getUserById(req, res) {
-    const { id } = req.params;
+    const { userId  } = req.params;
     try {
-        const user = await User.findById(id);
+        const user = await User.findById(userId);
         if (!user) {
             return res.status(400).json({ message: 'No users with that ID⚠️' });
         }
@@ -33,10 +33,10 @@ async function createUser(req, res) {
 };
 
 async function updateUserById(req, res) {
-    const { id } = req.params;
+    const { userId } = req.params;
     try {
         const user = await User.findByIdAndUpdate(
-            id,
+            userId,
             {
                 $set: req.body
             },
@@ -55,9 +55,9 @@ async function updateUserById(req, res) {
 };
 
 async function deleteUserById(req, res) {
-    const { id } = req.params;
+    const { userId } = req.params;
     try {
-        const user = await User.findByIdAndDelete(id);
+        const user = await User.findByIdAndDelete(userId);
         if (!user) {
             return res.status(404).json({ message: 'No users with that ID⚠️' });
         }
