@@ -36,7 +36,12 @@
 1. Connect to the server & begin the application by using command: `node --watch server.js`<br> 
 
 ## Demo
-[Demo Walkthrough](https://drive.google.com/file/d/11-lspdVNFxWrrWCYSI3h-ERPZQrjoBTT/view?usp=sharing)<br>
+
+<div>
+    <a href="https://www.loom.com/share/99df1b489bd5469b83cbfe54823eabd4">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/99df1b489bd5469b83cbfe54823eabd4-with-play.gif">
+    </a>
+</div>
 
 ## Contributing
 If you have any contributing ideas for this project, contact me using the methods in [Questions](#questions) section
