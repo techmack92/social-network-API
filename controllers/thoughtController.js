@@ -133,7 +133,7 @@ async function deleteReaction(req, res) {
         if (!deletedThought) {
             return res.status(404).json({ message: 'No thoughts with that ID⚠️' });
         }
-        res.json(deletedThought);
+        res.json({ message: 'Reaction deleted🚮', deletedThought });
     } catch (err) {
         res.status(500).json(err);
     }
