@@ -16,7 +16,10 @@
 + [Questions](#questions)
 
 ## Overview
-
+This is an API that is built with MongoDB & creates a social network web application where users can:<br>
++ share their thoughts, <br>
++ react to friends' thoughts, <br>
++ & create a friend list with the capabilities to manipulate this data<br>
 
 ## Installation
 ***Install these programs on your computer:***
