@@ -32,7 +32,7 @@ This is an API that is built with MongoDB & creates a social network web applica
 1. Clone this repository<br>
 2. Use command: `npm install` to install the Node Package Manager<br> 
 3. Use command: `npm install express` to install the express package<br>
-4. Use command: `npm install mongoose` to install the ODM (object-document mapping) librabry for MongoDB & Node.js<br>
+4. Use command: `npm install mongoose` to install the ODM (object-document mapping) library for MongoDB & Node.js<br>
 
 ## Usage
 ***When user has completed all installation steps above:***<br> 
