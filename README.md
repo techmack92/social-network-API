@@ -41,9 +41,6 @@ This is an API that is built with MongoDB & creates a social network web applica
 ## Demo
 <div>
     <a href="https://www.loom.com/share/2c2abd572ac54a91ad15c947b7ed88f7">
-      <p>Social Network API Demo - Watch Video</p>
-    </a>
-    <a href="https://www.loom.com/share/2c2abd572ac54a91ad15c947b7ed88f7">
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2c2abd572ac54a91ad15c947b7ed88f7-1707774218199-with-play.gif">
     </a>
   </div>
