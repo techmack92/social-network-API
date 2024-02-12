@@ -39,12 +39,15 @@ This is an API that is built with MongoDB & creates a social network web applica
 1. Connect to the server & begin the application by using command: `node --watch server.js`<br> 
 
 ## Demo
-
 <div>
-    <a href="https://www.loom.com/share/99df1b489bd5469b83cbfe54823eabd4">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/99df1b489bd5469b83cbfe54823eabd4-with-play.gif">
+    <a href="https://www.loom.com/share/2c2abd572ac54a91ad15c947b7ed88f7">
+      <p>Social Network API Demo - Watch Video</p>
     </a>
-</div>
+    <a href="https://www.loom.com/share/2c2abd572ac54a91ad15c947b7ed88f7">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2c2abd572ac54a91ad15c947b7ed88f7-1707774218199-with-play.gif">
+    </a>
+  </div>
+
 
 ## Contributing
 If you have any contributing ideas for this project, contact me using the methods in [Questions](#questions) section
